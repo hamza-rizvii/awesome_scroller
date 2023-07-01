@@ -1,8 +1,3 @@
-/// Support for doing something awesome.
-///
-/// More dartdocs go here.
-library;
+library awesome_scroller;
 
-export 'src/awesome_scroller_base.dart';
-
-// TODO: Export any libraries intended for clients of this package.
+export 'src/awesome_scroller.dart';

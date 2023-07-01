@@ -1,16 +1,6 @@
-import 'package:awesome_scroller/awesome_scroller.dart';
-import 'package:test/test.dart';
+import 'package:flutter_test/flutter_test.dart';
+
 
 void main() {
-  group('A group of tests', () {
-    final awesome = Awesome();
 
-    setUp(() {
-      // Additional setup goes here.
-    });
-
-    test('First Test', () {
-      expect(awesome.isAwesome, isTrue);
-    });
-  });
 }
