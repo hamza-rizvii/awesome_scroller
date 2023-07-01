@@ -2,17 +2,20 @@
 
 Customizable Flutter package which synchronize Animations with PageView.
 
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
 ## Usage
 
 To use this package we must first define how our ListView Widget will look like.
 
+Add `awesome_scroller` dependency to your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  awesome_scroller: 0.0.6
+```
+
+
+In your Dart code, import `'package:awesome_scroller/awesome_scroller.dart';`
 ```dart
-import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
 
@@ -21,10 +24,35 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AwesomeScroller(
-      itemCout: _itemCount,
-      pageController: _controller,
-      widget: child,
+    return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text(
+          "Awesome Scroller",
+          style: TextStyle(fontWeight: FontWeight.w900, color: Colors.white),
+        ),
+        backgroundColor: Colors.transparent,
+        actions: [
+          IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.settings,
+                color: Colors.white,
+              ))
+        ],
+      ),
+      body: AwesomeScroller(
+          itemCount: 3,
+          widget: Container(
+            width: double.infinity,
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                  image: NetworkImage(
+                      "IMAGE_URL_HERE"),
+                  fit: BoxFit.cover),
+            ),
+          )),
     );
   }
 }
