@@ -1,7 +1,7 @@
 name: awesome_scroller
 description: Animated scroller flutter.
 version: 0.0.1
-homepage:
+homepage: https://github.com/hamza-rizvii/awesome_scroller
 
 environment:
   sdk: '>=3.0.5 <4.0.0'
@@ -10,6 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  cached_network_image: ^3.2.3
+
 
 dev_dependencies:
   flutter_test:
