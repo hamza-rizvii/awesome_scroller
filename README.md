@@ -1,3 +1,10 @@
+
+
+<p align='center'>
+    <img src="https://raw.githubusercontent.com/jonbhanson/flutter_native_splash/master/splash_demo.gif" />
+    <img src="https://raw.githubusercontent.com/jonbhanson/flutter_native_splash/master/splash_demo_dark.gif" />
+</p>
+
 ## Features
 
 Customizable Flutter package which synchronize Animations with PageView.
