@@ -4,12 +4,16 @@
 
 ## 0.0.3
 
-* Added animations
+* Added animations to scroller.
 
 ## 0.0.4
 
-* Scrolling improvements
+* Scrolling improvements.
 
-## 0.0.7
+## 0.0.8
 
-* OnPageChange method added
+* OnPageChange method added.
+
+## 0.0.9
+
+* Scroll directions added.

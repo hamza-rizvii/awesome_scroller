@@ -7,12 +7,14 @@ class AwesomeScroller extends StatefulWidget {
     required this.itemCount,
     required this.widget,
     required this.onPageChanged,
+    this.scrollDirection = Axis.vertical,
     super.key,
   });
 
   final int itemCount;
   final Widget widget;
   final void Function(int)? onPageChanged;
+  final Axis scrollDirection;
 
   @override
   State<AwesomeScroller> createState() => _AwesomeScrollerState();
@@ -37,7 +39,7 @@ class _AwesomeScrollerState extends State<AwesomeScroller> {
     return SizedBox(
       height: MediaQuery.of(context).size.height,
       child: PageView.builder(
-        scrollDirection: Axis.vertical,
+        scrollDirection: widget.scrollDirection,
         itemCount: widget.itemCount,
         controller: pageController,
         onPageChanged: widget.onPageChanged,

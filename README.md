@@ -1,11 +1,13 @@
-<p align='center'>
-    <img src="https://firebasestorage.googleapis.com/v0/b/flutter-packages-e1b84.appspot.com/o/ezgif.com-optimize.gif?alt=media&token=2f5f5179-3518-47f9-b14a-7ef4e7126bee" />
-</p>
+
 
 ## Features
 
 Animated Flutter ScrollView package which synchronize Animations with PageView. You and add any
 child widget inside Awesome Scroller and scroll the list.
+
+<p align='left'>
+    <img src="https://firebasestorage.googleapis.com/v0/b/flutter-packages-e1b84.appspot.com/o/ezgif.com-optimize.gif?alt=media&token=2f5f5179-3518-47f9-b14a-7ef4e7126bee" />
+</p>
 
 ## Usage
 
@@ -15,7 +17,7 @@ Add `awesome_scroller` dependency to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  awesome_scroller: 0.0.6
+  awesome_scroller: 0.0.9
 ```
 
 Don't forget to `flutter pub get`.
@@ -50,6 +52,7 @@ class MyApp extends StatelessWidget {
       ),
       body: AwesomeScroller(
           itemCount: 3,
+          scrollDirection: Axis.verticle,
           onPageChanged: (index) {
             setState(() {
               pageIndex = index;
