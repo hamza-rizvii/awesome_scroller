@@ -14,6 +14,6 @@
 
 * OnPageChange method added.
 
-## 0.0.9
+## 0.0.14
 
 * Scroll directions added.

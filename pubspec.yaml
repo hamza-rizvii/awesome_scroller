@@ -1,6 +1,6 @@
 name: awesome_scroller
 description: Animated Flutter ScrollView package which synchronize Animations with PageView. You and add any child widget inside Awesome Scroller and scroll the list.
-version: 0.0.9
+version: 0.0.14
 homepage: https://github.com/hamza-rizvii/awesome_scroller
 
 environment:
